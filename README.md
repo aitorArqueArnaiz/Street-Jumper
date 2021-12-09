@@ -8,11 +8,11 @@ USAGE INSTRUCCIONS :
 	
 Extensions :
 	
-Augmented Reality Extension : https://github.com/nicolasgramlich/AndEngineAugme	ntedRealityExtension.git
+Augmented Reality Extension : https://github.com/nicolasgramlich/AndEngineAugmentedRealityExtension.git
 	
-Multiplayer Extension : https://github.com/nicolasgramlich/AndEngineMultip	layerExtension.git
+Multiplayer Extension : https://github.com/nicolasgramlich/AndEngineMultiplayerExtension.git
 	
-Physics Extension : https://github.com/nicolasgramlich/AndEnginePhysic	sBox2DExtension.git
+Physics Extension : https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension.git
 	
 Examples : https://github.com/nicolasgramlich/AndEngineExamples.git
 	
