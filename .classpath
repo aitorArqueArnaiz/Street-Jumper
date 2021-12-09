@@ -2,12 +2,33 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry exported="true" kind="src" path="/AndEnginePhysicsBox2DExtension"/>
 	<classpathentry exported="true" kind="src" path="/AndEngine"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEnginePhysicsBox2DExtension"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineAugmentedRealityExtension"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineMultiplayerExtension"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/Downloads/AndEngine/bin/andengine.jar" sourcepath="/AndEngine/src"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/android-sdks/platforms/android-15/android.jar" sourcepath="C:/Users/aitor/android-sdks/sources/android-15">
+		<attributes>
+			<attribute name="javadoc_location" value="http://developer.android.com/reference/"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/android-sdks/platforms/android-17/android.jar" sourcepath="C:/Users/aitor/android-sdks/sources/android-17">
+		<attributes>
+			<attribute name="javadoc_location" value="http://developer.android.com/reference/"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineSVGTextureRegionExtension"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineTexturePackerExtension"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineTMXTiledMapExtension"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/Downloads/AndEngineMultiplayerExtension/bin/andenginemultiplayerextension.jar" sourcepath="/AndEngineMultiplayerExtension/src"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
