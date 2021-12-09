@@ -33,7 +33,7 @@ public class slimeEnemy extends AnimatedSprite
 	
 	public slimeEnemy(float pX, float pY, VertexBufferObjectManager vbo, Camera camera, PhysicsWorld physicsWorld)
 	{
-		super(pX, pY, ResourcesManager.getInstance().pinguinEnemy , vbo);
+		super(pX, pY, ResourcesManager.getInstance().flyEnemy , vbo);
 		createPhysics(camera, physicsWorld);
 		//camera.setChaseEntity(this);
 	}

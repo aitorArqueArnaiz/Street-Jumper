@@ -35,12 +35,24 @@ import org.andengine.util.level.simple.SimpleLevelEntityLoaderData;
 import org.andengine.util.level.simple.SimpleLevelLoader;
 import org.xml.sax.Attributes;
 
+//---------------------------------- INNER && ANONIMOUS CLASES ------------------------------------------------------
+import com.PFC.PlatformJumper.streetJumper;
+import com.PFC.PlatformJumper.streetJumper.PlayerClient;
+import com.PFC.PlatformJumper.streetJumper.PlayerSelectedClientServerMessage;
+import com.PFC.PlatformJumper.streetJumper.PlayerSelectedServerMessage;
+import com.PFC.PlatformJumper.streetJumper.PlayerServer;
+//---------------------------------- PHYSICS BOX2D EXTENSION ------------------------------------------------------
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.Body;
+import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
+import com.badlogic.gdx.physics.box2d.Contact;
+import com.badlogic.gdx.physics.box2d.ContactImpulse;
+import com.badlogic.gdx.physics.box2d.ContactListener;
+import com.badlogic.gdx.physics.box2d.Fixture;
+import com.badlogic.gdx.physics.box2d.FixtureDef;
+import com.badlogic.gdx.physics.box2d.Joint;
+import com.badlogic.gdx.physics.box2d.Manifold;
 
-//---------------------------------- PARTICLE SYSTEM && NETWORK ------------------------------------------------------
-import particleSystem.FireParticleSystem;
-import particleSystem.expulsorParticleSystem;
-import particleSystem.waterExplosion;
-import particleSystem.waterParticleSystem;
 import Animated_Features.Bomb;
 import Animated_Features.SpringBoarder;
 import Animated_Features.Switcher;
@@ -53,36 +65,19 @@ import Network.ServerMessageFlags;
 import Players.Player;
 import Players.PlayerOnline;
 import Players.PlayerSpecial;
-
 //---------------------------------- RESOURCES MANAGEMENT ------------------------------------------------------
 import ResourcesManagment.ResourcesManager;
 import ResourcesManagment.SceneManager;
 import ResourcesManagment.SceneManager.SceneType;
-
 //---------------------------------- SHADERS && TIMERS ------------------------------------------------------
 import Scene.LevelCompleteWindow.StarsCount;
 import Shader.WaterMaskEffectShader;
 import Timers.playTimer;
-
-
-//---------------------------------- INNER && ANONIMOUS CLASES ------------------------------------------------------
-import com.PFC.PlatformJumper.streetJumper;
-import com.PFC.PlatformJumper.streetJumper.PlayerClient;
-import com.PFC.PlatformJumper.streetJumper.PlayerSelectedServerMessage;
-import com.PFC.PlatformJumper.streetJumper.PlayerSelectedClientServerMessage;
-import com.PFC.PlatformJumper.streetJumper.PlayerServer;
-
-//---------------------------------- PHYSICS BOX2D EXTENSION ------------------------------------------------------
-import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Body;
-import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
-import com.badlogic.gdx.physics.box2d.Contact;
-import com.badlogic.gdx.physics.box2d.ContactImpulse;
-import com.badlogic.gdx.physics.box2d.ContactListener;
-import com.badlogic.gdx.physics.box2d.Fixture;
-import com.badlogic.gdx.physics.box2d.FixtureDef;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.Manifold;
+//---------------------------------- PARTICLE SYSTEM && NETWORK ------------------------------------------------------
+import particleSystem.FireParticleSystem;
+import particleSystem.expulsorParticleSystem;
+import particleSystem.waterExplosion;
+import particleSystem.waterParticleSystem;
 
 public class GameScene extends BaseScene implements IOnSceneTouchListener, ServerMessageFlags, ClientMessageFlags
 {
@@ -477,7 +472,7 @@ public class GameScene extends BaseScene implements IOnSceneTouchListener, Serve
 			 waterEx = wp.build(engine, 1800 , 150);
 			 ResourcesManager.getInstance().activity.setAccelerometerActivated(true);
 			 warningText = new Text(400, 240, resourcesManager.font, "Switcher Activated!\nSearch It", new TextOptions(HorizontalAlign.CENTER), vbom);
-			 warningText.setColor(android.graphics.Color.LTGRAY);
+			 warningText.setColor(Color.TRANSPARENT);
 			 
 			// Create and initialize timer options an update
 			 playT = new playTimer(1.0f, new playTimer.ITimerCallback()
@@ -551,7 +546,7 @@ public class GameScene extends BaseScene implements IOnSceneTouchListener, Serve
 			 
 			 createBombSpriteControl();
 			 warningText = new Text(400, 240, resourcesManager.font, "Switcher Activated!\nSearch It", new TextOptions(HorizontalAlign.CENTER), vbom);
-			 warningText.setColor(android.graphics.Color.WHITE);
+			 warningText.setColor(Color.WHITE);
 		   	 nBombs = new Text(40, 300, resourcesManager.font, "+" + player.hasBombs, new TextOptions(HorizontalAlign.LEFT), vbom);
 			 
 		   	 if (resourcesManager.particlesActivated == true)

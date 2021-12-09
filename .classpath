@@ -26,9 +26,6 @@
 			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
 		</accessrules>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineSVGTextureRegionExtension"/>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineTexturePackerExtension"/>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineTMXTiledMapExtension"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/Downloads/AndEngineMultiplayerExtension/bin/andenginemultiplayerextension.jar" sourcepath="/AndEngineMultiplayerExtension/src"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
