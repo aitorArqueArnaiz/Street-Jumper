@@ -10,22 +10,6 @@
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineAugmentedRealityExtension"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/AndEngineMultiplayerExtension"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/Downloads/AndEngine/bin/andengine.jar" sourcepath="/AndEngine/src"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/android-sdks/platforms/android-15/android.jar" sourcepath="C:/Users/aitor/android-sdks/sources/android-15">
-		<attributes>
-			<attribute name="javadoc_location" value="http://developer.android.com/reference/"/>
-		</attributes>
-		<accessrules>
-			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
-		</accessrules>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/android-sdks/platforms/android-17/android.jar" sourcepath="C:/Users/aitor/android-sdks/sources/android-17">
-		<attributes>
-			<attribute name="javadoc_location" value="http://developer.android.com/reference/"/>
-		</attributes>
-		<accessrules>
-			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
-		</accessrules>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="C:/Users/aitor/Downloads/AndEngineMultiplayerExtension/bin/andenginemultiplayerextension.jar" sourcepath="/AndEngineMultiplayerExtension/src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_45"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

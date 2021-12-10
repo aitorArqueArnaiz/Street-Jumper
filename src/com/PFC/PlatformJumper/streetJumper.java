@@ -164,7 +164,6 @@ public class streetJumper extends BaseAugmentedRealityGameActivity implements IA
 	public EngineOptions onCreateEngineOptions()
     {
 		final Display defaultDisplay = getWindow().getWindowManager().getDefaultDisplay();
-	    @SuppressWarnings("deprecation")
 		int CAMERA_WIDTH = defaultDisplay.getWidth();
 		int CAMERA_HEIGHT = defaultDisplay.getHeight();
 	    
@@ -185,7 +184,6 @@ public class streetJumper extends BaseAugmentedRealityGameActivity implements IA
 	    return engineOptions;
     }
 	
-	@SuppressWarnings("deprecation")
 	public void getDialog()
 	{
 		dialog.show();
@@ -196,7 +194,6 @@ public class streetJumper extends BaseAugmentedRealityGameActivity implements IA
 	 Method that limits the FPS (frames per second) to 60 Herz due to 
 	 the diferent frame rate technology
 	 */
-	@SuppressWarnings("deprecation")
 	@Override
 	public Engine onCreateEngine(EngineOptions pEngineOptions) 
 	{
